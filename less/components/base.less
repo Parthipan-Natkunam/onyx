@@ -1,17 +1,61 @@
+@import url('colors.less');
+@import url('variables.less');
+/* Onyx Grid System */
 /* containers */
 .container,.fullscreen-container{
-	width: 100%;
+	width: @full-width;
+	box-sizing: border-box;
 }
 
 .fullscreen-container{
-	position:absolute;
-	top:0;
-	left:0;
-	height: 100%;
+	height: @full-screen-height;
 	overflow: hidden;
 }
 
-/* Colored Containers */
+/* rows */
+.row{
+	&::before,&::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+/* Columns */
+[class*='col-']{
+	float: left;
+	min-height: @col-min-height;
+	margin-right: @gutter-width-lg;
+	&:first-of-type{
+		margin-left: @gutter-width-lg;
+	}
+}
+.col-lg-8{
+	width: calc((@full-width - ((@col-8-lg-number+1)*@col-lg-gutter)) / @col-8-lg-number);
+}
+.col-lg-7{
+	width: calc((@full-width - ((@col-7-lg-number+1)*@col-lg-gutter)) / @col-7-lg-number);
+}
+.col-lg-6{
+	width: calc((@full-width - ((@col-6-lg-number+1)*@col-lg-gutter)) / @col-6-lg-number);
+}
+.col-lg-5{
+	width: calc((@full-width - ((@col-5-lg-number+1)*@col-lg-gutter)) / @col-5-lg-number);
+}
+.col-lg-4{
+	width: calc((@full-width - ((@col-4-lg-number+1)*@col-lg-gutter)) / @col-4-lg-number);
+}
+.col-lg-3{
+	width: calc((@full-width - ((@col-3-lg-number+1)*@col-lg-gutter)) / @col-3-lg-number);
+}
+.col-lg-2{
+	width: calc((@full-width - ((@col-2-lg-number+1)*@col-lg-gutter)) / @col-2-lg-number);
+}
+.col-lg-1{
+	width: calc((@full-width - ((@col-1-lg-number+1)*@col-lg-gutter)) / @col-1-lg-number);
+}
+
+/* Colored Backgrounds */
 .blue-bg{
 	background-color: @onyx-blue;
 }
@@ -28,7 +72,15 @@
 	background-color: @onyx-yellow;
 }
 
-/* rows */
-.row{
-	padding: 10px;
+/* Anchors */
+a{
+	text-decoration: none;
+	color: @onyx-blue;
+	&:hover, &:focus{
+		text-decoration: underline;
+	 	text-decoration-style: dotted;
+	}
+	&:active{
+		color: lighten(@onyx-blue,20%);
+	}
 }
