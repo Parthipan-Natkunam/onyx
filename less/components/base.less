@@ -25,35 +25,32 @@
 [class*='col-']{
 	float: left;
 	min-height: @col-min-height;
-	margin-right: @gutter-width-lg;
 	word-wrap: break-word;
-	&:first-of-type{
-		margin-left: @gutter-width-lg;
-	}
+	overflow-x: hidden;
 }
-.col-lg-1{
-	width: calc((@full-width - ((@col-1-number+1)*@col-lg-gutter)) / @col-1-number);
+.col-1{
+	width: @col-1-width;
 }
-.col-lg-2{
-	width: calc((@full-width - ((@col-2-number+1)*@col-lg-gutter)) / @col-2-number);
+.col-2{
+	width: @col-2-width;
 }
-.col-lg-3{
-	width: calc((@full-width - ((@col-3-number+1)*@col-lg-gutter)) / @col-3-number);
+.col-3{
+	width: @col-3-width;
 }
-.col-lg-4{
-	width: calc((@full-width - ((@col-4-number+1)*@col-lg-gutter)) / @col-4-number);
+.col-4{
+	width: @col-4-width;
 }
-.col-lg-5{
-	width: calc((@full-width - ((@col-5-number+1)*@col-lg-gutter)) / @col-5-number);
+.col-5{
+	width: @col-5-width;
 }
-.col-lg-6{
-	width: calc((@full-width - ((@col-6-number+1)*@col-lg-gutter)) / @col-6-number);
+.col-6{
+	width: @col-6-width;
 }
-.col-lg-7{
-	width: calc((@full-width - ((@col-7-number+1)*@col-lg-gutter)) / @col-7-number);
+.col-7{
+	width: @col-7-width;
 }
-.col-lg-8{
-	width: calc((@full-width - ((@col-8-number+1)*@col-lg-gutter)) / @col-8-number);
+.col-8{
+	width: @col-8-width;
 }
 
 /* Colored Backgrounds */
