@@ -1,40 +1,49 @@
 /* Imports */
 @import url('colors.less');
-//@import url('https://fonts.googleapis.com/css?family=Coustard');
+
 /* Base Font */
 body{
-	font-family: 'Coustard', serif;
+	font-family: @base-font-family;
 }
 
 /* Base Txt Colors */
 h1,h2,h3,h4,h5,h6,p{
 	color: @onyx-black;
+	padding: @base-padding;
 }
 
 /* Heading Styles */
-h1,h2,h3,h4,h5,h6{
-	margin: 15px 0;
-}
 h1{
-	font-size: 51px;
+	font-size: @h1-font-size;
 }
 h2{
-	font-size: 45px;
+	font-size: @h2-font-size;
 }
 h3{
-	font-size: 37px;
+	font-size: @h3-font-size;
 }
 h4{
-	font-size: 31px;
+	font-size: @h4-font-size;
 }
 h5{
-	font-size: 23px;
+	font-size: @h5-font-size;
 }
 h6{
-	font-size: 16px;
+	font-size: @h6-font-size;
 }
+
+/* para styles */
 body,p{
-	font-size: 14px;
+	font-size: @base-font-size;
+}
+p{
+	&.news-print{
+		&::first-letter{
+			font-weight: bold;
+			font-size: @base-font-size * 2;
+			padding-left: @base-padding * 2;
+		}
+	}
 }
 
 /* Txt Alignments */
@@ -49,4 +58,24 @@ body,p{
 }
 .left-text{
 	text-align: left;
+}
+
+/* Anchors */
+a{
+	&:link{
+		text-decoration: none;
+		color: @onyx-blue;
+		text-decoration: underline;
+	 	text-decoration-style: dotted;
+	 	cursor: pointer;
+	}
+	&:visited{
+		color: lighten(@onyx-blue,22%)
+	}
+	&:hover, &:focus{
+		color: darken(@onyx-blue,10%)
+	}
+	&:active{
+		color: lighten(@onyx-blue,20%);
+	}
 }
