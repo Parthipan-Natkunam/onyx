@@ -1,0 +1,24 @@
+/*basic nav bar structure*/
+nav{
+	&.full-nav{
+		min-width:@nav-full-width;
+		background-color:@onyx-black;
+		color:@onyx-white;
+		min-height:@nav-min-height;
+		position:relative;
+	}
+	.nav-logo{
+		position: absolute;
+		top:@nav-logo-pad/2;
+		bottom:@nav-logo-pad/2;
+		left:@base-padding;
+		.logo-img{
+			width:@nav-logo-width;
+			height:@nav-logo-height;
+			@media only screen and (max-width:@mobile-width) {
+				width:@nav-logo-width - 20;
+				height:@nav-logo-height - 20;
+			}
+		}
+	}
+}
