@@ -3,4 +3,18 @@
 # Onyx
 A simple front-end design and styling framework for rapid web prototyping.
 
-This projects is being actively developed and the readme will be updated with the necessary deatils once the initial release is ready.
+This projects is being actively developed and the reame will be updated on an incremental basis as the project grows.
+
+#### Steps to Build from Source
+- Clone this repo.
+```
+git clone https://github.com/Parthipan-Natkunam/onyx.git
+```
+- Install dev dependencies
+```
+npm install
+```
+- Start the grunt runner
+```
+grunt
+```
