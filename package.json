@@ -1,0 +1,26 @@
+{
+  "name": "Onyx",
+  "version": "1.0.0",
+  "description": "An 8-grid frontend framework for quick web prototyping",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parthipan-Natkunam/onyx.git"
+  },
+  "keywords": [],
+  "author": "Parthipan Natkunam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Parthipan-Natkunam/onyx/issues"
+  },
+  "homepage": "https://github.com/Parthipan-Natkunam/onyx#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  }
+}
