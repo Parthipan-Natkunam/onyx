@@ -1,15 +1,19 @@
 /*basic nav bar structure*/
 nav{
-	&.full-nav{
-		min-width:@nav-full-width;
+	box-shadow: -6px 5px 7px 0px @shadow-black;
+	min-width:@nav-full-width;
+	min-height:@nav-min-height;
+	&.fixed-nav{
+		position: fixed;
+		top: 0;
+	}
+	&.light{
+		background-color:@onyx-white;
+		color:@onyx-black;
+	}
+	&.dark{
 		background-color:@onyx-black;
 		color:@onyx-white;
-		min-height:@nav-min-height;
-		position:relative;
-		&.light{
-			background-color:@onyx-white;
-			color:@onyx-black;
-		}
 	}
 	.nav-logo{
 		position: absolute;
@@ -23,6 +27,26 @@ nav{
 				width:@nav-logo-width - 10;
 				height:@nav-logo-height - 10;
 			}
+		}
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		float: right;
+		clear: both;
+		li{
+			display: inline-block;
+			line-height: @nav-min-height;
+			margin: 0 @nav-li-margin;
+			font-size: @nav-li-font-size;
+			font-weight: bold;
+		}
+	}
+	a{
+		&:link,&:visited,&:hover,&:active{
+			text-decoration: none;
+			color:inherit;
+			font-size: inherit;
 		}
 	}
 }
