@@ -33,7 +33,7 @@ nav{
 			}
 		}
 	}
-	ul{
+	.nav-menu{
 		list-style-type: none;
 		margin: 0;
 		float: right;
@@ -45,8 +45,16 @@ nav{
 			font-size: @nav-li-font-size;
 			font-weight: bold;
 			@media only screen and (max-width: @tablet-max-width)  {
-				display: none;
+				width: 100%;
 			}
+		}
+		@media only screen and (max-width: @tablet-max-width)  {
+			display: none;
+			position: relative;
+			width: 100%;
+			text-align: center;
+			color: inherit;
+			background-color: inherit;
 		}
 	}
 	a{
@@ -66,6 +74,7 @@ nav{
 		text-align: center;
 		float:right;
 		clear:both;
+		cursor:pointer;
 		margin: @nav-logo-pad*4 @nav-li-margin;
 		@media only screen and (max-width: @tablet-max-width)  {
 			display: inline-block;
