@@ -10,10 +10,22 @@ nav{
 	&.light{
 		background-color:@onyx-white;
 		color:@onyx-black;
+		.nav-toggler{
+			border: 2px solid @onyx-black;
+			span{
+				background-color: @onyx-black;
+			}
+		}
 	}
 	&.dark{
 		background-color:@onyx-black;
 		color:@onyx-white;
+		.nav-toggler{
+			border: 2px solid @onyx-white;
+			span{
+				background-color: @onyx-white;
+			}
+		}
 	}
 	&.transparent{
 		background-color: transparent;
@@ -69,7 +81,6 @@ nav{
 		position: relative;
 		height: @nav-btn-dimension;
 		width: @nav-btn-dimension;
-		border: 2px solid @onyx-black;
 		border-radius: @nav-logo-pad;
 		text-align: center;
 		float:right;
@@ -80,7 +91,6 @@ nav{
 			display: inline-block;
 		}
 		span{
-			background-color: @onyx-black;
 			height: @ham-height;
 			width: @ham-width;
 			position: absolute;
