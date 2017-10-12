@@ -19,7 +19,9 @@
   "homepage": "https://github.com/Parthipan-Natkunam/onyx#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "jit-grunt": "^0.10.0"
   }
