@@ -9,20 +9,21 @@
 @col-8-width: 100%;
 
 /* other widths */
-@col-min-height: 1px;
-@full-screen-height: 100vh;
 @full-width: 100%;
 @gutter-width: 2%;
 @nav-full-width: @full-width;
 @nav-logo-width: 130px;
 
 /*heights*/
+@col-min-height: 1px;
+@full-screen-height: 100vh;
 @nav-min-height: 80px;
 @nav-logo-height: 75px;
+@hero-height: 800px;
 
 /* fonts */
 @base-font-family: 'sans-serif';
-
+@cursive-font-family: 'cursive';
 /*padding*/
 @base-padding: 8px;
 
@@ -30,12 +31,26 @@
 @base-font-size: 14px;
 @min-increment: 2;
 @max-increment: 8;
+@tab-font-divider: 1.2;
+@mobile-font-divider: 1.5;
 @h6-font-size: @base-font-size + @min-increment;
 @h5-font-size: @h6-font-size + @max-increment;
 @h4-font-size: @h5-font-size + @max-increment;
 @h3-font-size: @h4-font-size + @max-increment;
 @h2-font-size: @h3-font-size + @max-increment;
 @h1-font-size: @h2-font-size + @max-increment;
+@h6-tab-font: @h6-font-size/@tab-font-divider;
+@h5-tab-font: @h5-font-size/@tab-font-divider;
+@h4-tab-font: @h4-font-size/@tab-font-divider;
+@h3-tab-font: @h3-font-size/@tab-font-divider;
+@h2-tab-font: @h2-font-size/@tab-font-divider;
+@h1-tab-font: @h1-font-size/@tab-font-divider;
+@h6-mobile-font: @h6-font-size/@mobile-font-divider;
+@h5-mobile-font: @h5-font-size/@mobile-font-divider;
+@h4-mobile-font: @h4-font-size/@mobile-font-divider;
+@h3-mobile-font: @h3-font-size/@mobile-font-divider;
+@h2-mobile-font: @h2-font-size/@mobile-font-divider;
+@h1-mobile-font: @h1-font-size/@mobile-font-divider;
 
 /*break points*/
 @mobile-width: unit(480,px);

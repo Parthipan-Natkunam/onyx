@@ -4,11 +4,16 @@
 @import url('components/typography.less');
 @import url('components/base.less');
 @import url('components/ui_elements/navbar.less');
+@import url('components/ui_elements/hero.less');
 
 /* Global Reset */
 html,body{
 	margin:0;
 	padding:0;
+	overflow-x: hidden;
+}
+body{
+	display:none;
 }
 .non-overlap-body{
 	padding-top: @nav-min-height;
