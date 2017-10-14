@@ -5,6 +5,9 @@ A simple front-end design and styling framework for rapid web prototyping.
 
 This projects is being actively developed and the reame will be updated on an incremental basis as the project grows.
 
+#### Project dependency
+Onyx depends on **jQuery**
+
 #### Steps to Build from Source
 - Clone this repo.
 ```
