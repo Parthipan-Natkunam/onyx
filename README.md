@@ -13,7 +13,7 @@ Onyx depends on **jQuery**.
 ```
 git clone https://github.com/Parthipan-Natkunam/onyx.git
 ```
-- Install dev dependencies
+- Install [dev dependencies](https://github.com/Parthipan-Natkunam/onyx/network/dependencies)
 ```
 npm install
 ```
