@@ -6,7 +6,6 @@ body{
 /* Base Txt Colors */
 h1,h2,h3,h4,h5,h6,p{
 	color: @onyx-black;
-	padding: @base-padding;
 }
 
 /* Heading Styles */
@@ -27,6 +26,47 @@ h5{
 }
 h6{
 	font-size: @h6-font-size;
+}
+
+@media only screen and (max-width: @tablet-max-width){
+	h1{
+		font-size: @h1-tab-font;
+	}
+	h2{
+		font-size: @h2-tab-font;
+	}
+	h3{
+		font-size: @h3-tab-font;
+	}
+	h4{
+		font-size: @h4-tab-font;
+	}
+	h5{
+		font-size: @h5-tab-font;
+	}
+	h6{
+		font-size: @h6-tab-font;
+	}
+}
+@media only screen and (max-width:@mobile-width) {
+	h1{
+		font-size: @h1-mobile-font;
+	}
+	h2{
+		font-size: @h2-mobile-font;
+	}
+	h3{
+		font-size: @h3-mobile-font;
+	}
+	h4{
+		font-size: @h4-mobile-font;
+	}
+	h5{
+		font-size: @h5-mobile-font;
+	}
+	h6{
+		font-size: @h6-mobile-font;
+	}
 }
 
 /* para styles */
